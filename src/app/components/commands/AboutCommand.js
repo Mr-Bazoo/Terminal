@@ -1,6 +1,6 @@
 import React from 'react';
-import LogoAsciArt from '../LogoAsciArt.js'
 import CommandLine from '../CommandLine.js'
+import LinkEntry from '../LinkEntry.js';
 
 const AboutCommand = (props) => {
     const command = props.command;
@@ -8,13 +8,9 @@ const AboutCommand = (props) => {
     return (
         <div>
             <CommandLine command={command}></CommandLine>
-            <LogoAsciArt></LogoAsciArt>
-            <p>Hey 👋,</p>
-            <p>My name is <strong>thedannicraft</strong>!</p>
-            <p>I{"'"}m a hobby developper based in <strong>Germany</strong>.</p>
-            <p>I am passionate in writing codes, developing web applications,</p>
-            <p>games and many more! You can check out my projects</p>
-            <p>by running <strong><span class="secondary">projects</span></strong> inside this shell</p>
+            <p>Get in touch with me here:</p>
+            <LinkEntry color={"#5865F2"} label={"Discord - TheDanniCraft#0202"} link={"https://discordapp.com/users/385090261019131915"}></LinkEntry>
+            <LinkEntry color={"#CBD5FF"} label={"Mail - mail@thedannicraft.de"} link={"mailto:mail@thedannicraft.de"}></LinkEntry>
         </div>
     );
 };

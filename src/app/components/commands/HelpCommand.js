@@ -25,17 +25,16 @@ const HelpCommand = (props) => {
         <p>
             <CommandLine command={command}></CommandLine>
             <table style={{ lineHeight: 1 }}>
-                <HelpLine command={"about"} description={"about TheDanniCraft"}></HelpLine>
-                <HelpLine command={"clear"} description={"clear the terminal"}></HelpLine>
-                <HelpLine command={"contact"} description={"wanna contact me?"}></HelpLine>
-                <HelpLine command={"echo"} description={"print something out"}></HelpLine>
-                <HelpLine command={"exit"} description={"exit the shell"}></HelpLine>
-                <HelpLine command={"help"} description={"see a list of all commands"}></HelpLine>
-                <HelpLine command={"history"} description={"view your command history"}></HelpLine>
-                <HelpLine command={"projects"} description={"list of my current projects"}></HelpLine>
+                <HelpLine command={"about"} description={"Informatie over Meneer Bas"}></HelpLine>
+                <HelpLine command={"clear"} description={"Maak alles leeg en start opnieuw"}></HelpLine>
+                <HelpLine command={"Uitleg"} description={"Wil je wat uitleg hebben?"}></HelpLine>
+                <HelpLine command={"echo"} description={"Herhaal wat jij typt"}></HelpLine>
+                <HelpLine command={"help"} description={"Welke commando's doen wel iets op deze website?"}></HelpLine>
+                <HelpLine command={"history"} description={"Krijg een lijst over wat je al getypt hebt."}></HelpLine>
+                <HelpLine command={"projects"} description={"Waar staat Meneer Bas bekend om?"}></HelpLine>
                 <HelpLine command={"socials"} description={"get all my socials"}></HelpLine>
-                <HelpLine command={"welcome"} description={"prints the welcome line"}></HelpLine>
-                <HelpLine command={"whoami"} description={"see who you are"}></HelpLine>
+                <HelpLine command={"welcome"} description={"Print het begin nog een keer."}></HelpLine>
+                <HelpLine command={"whoami"} description={"Verteld je wie je bent"}></HelpLine>
             </table>
         </p>
     );

@@ -6,7 +6,7 @@ const CommandLine = (props) => {
     return (
         <div style={{ paddingTop: 10 }}>
             <p>
-                <span class="prefix">visitor</span>@<span class="secondary">thedannicraft.de</span>:~$ {command}
+                <span class="prefix">Hacker</span>@<span class="secondary">Bazootainment</span>:~$ {command}
             </p>
         </div>
     );

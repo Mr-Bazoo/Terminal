@@ -7,7 +7,7 @@ const CommandError = (props) => {
     return (
         <p>
             <CommandLine command={command}></CommandLine>
-            <p class="error">command not found: {command}</p>
+            <p class="error">Comando: ({command}) niet gevonden, probeer iets anders. </p>
         </p>
     );
 };

@@ -3,7 +3,6 @@
 import CommandError from './components/CommandError.js'
 import CommandUsage from './components/CommandUsage.js';
 import AboutCommand from './components/commands/AboutCommand.js';
-import ContactCommand from './components/commands/ContactCommand.js';
 import EchoCommand from './components/commands/EchoCommand.js';
 import HelpCommand from './components/commands/HelpCommand.js'
 import CommandHistoryCommand from './components/commands/CommandHistoryCommand.js';
@@ -11,12 +10,12 @@ import ProjectCommand from './components/commands/ProjectCommand.js';
 import SocialsCommand from './components/commands/SocialsCommand.js';
 import WelcomeCommand from './components/commands/WelcomeCommand.js';
 import WhoAmICommand from './components/commands/WhoAmICommand.js';
-
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import UitlegCommand from './components/commands/UitlegCommand.js';
 
 const commandHistory = [];
 let historyIndex = 0;
-const commands = ["about", "clear", "contact", "echo", "exit", "help", "history", "projects", "projects go", "socials", "socials go", "welcome", "whoami"];
+const commands = ["uitleg", "clear", "about", "echo", "exit", "help", "history", "projects", "projects go", "socials", "socials go", "welcome", "whoami"];
 
 export default function Home() {
   const commandRef = useRef(null);
@@ -35,12 +34,12 @@ export default function Home() {
     const command = args.shift().toLowerCase();
 
     switch (command) {
-      case 'about':
+      case 'uitleg':
         if (args.length > 0) {
-          newElement = <CommandUsage usage={"about"} command={inputValue}></CommandUsage>
+          newElement = <CommandUsage usage={"uitleg"} command={inputValue}></CommandUsage>
           break;
         }
-        newElement = <AboutCommand command={inputValue}></AboutCommand>
+        newElement = <UitlegCommand command={inputValue}></UitlegCommand>
         break;
       case 'clear':
         if (args.length > 0) {
@@ -49,12 +48,12 @@ export default function Home() {
         }
         setAppendedElements([]);
         break;
-      case 'contact':
+      case 'about':
         if (args.length > 0) {
-          newElement = <CommandUsage usage={"contact"} command={inputValue}></CommandUsage>
+          newElement = <CommandUsage usage={"about"} command={inputValue}></CommandUsage>
           break;
         }
-        newElement = <ContactCommand command={inputValue}></ContactCommand>
+        newElement = <AboutCommand command={inputValue}></AboutCommand>
         break;
       case 'echo':
         if (args.length < 1) {
@@ -176,7 +175,7 @@ export default function Home() {
           ))}
         </div>
         <p class="commandWrapper" style={{ paddingTop: 10 }} ref={scrollRef}>
-          <span class="prefix">visitor</span>@<span class="secondary">thedannicraft.de</span>:~$ <input id="commandInput" class="commandPromt" style={{ paddingLeft: 5 }} ref={commandRef} onBlur={regainCommandFocus} type="text" value={inputValue} onChange={handleChange} onKeyDown={handleKeyPress}></input>
+          <span class="prefix">Hacker</span>@<span class="secondary">Bazootainment</span>:~$ <input id="commandInput" class="commandPromt" style={{ paddingLeft: 5 }} ref={commandRef} onBlur={regainCommandFocus} type="text" value={inputValue} onChange={handleChange} onKeyDown={handleKeyPress}></input>
           <label htmlFor="commandInput" class="hiddenLabel">Enter your command:</label>
         </p>
       </div>
