@@ -7,7 +7,7 @@ const WhoAmICommand = (props) => {
     return (
         <div>
             <CommandLine command={command}></CommandLine>
-            <p>sudo</p>
+            <p>Een persoon die geen spaties kent</p>
         </div>
     );
 };

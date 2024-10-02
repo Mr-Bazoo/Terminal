@@ -571,8 +571,14 @@ video {
 [hidden] {
   display: none;
 }
+.flex {
+  display: flex;
+}
 .table {
   display: table;
+}
+.border {
+  border-width: 1px;
 }
 
 :root {

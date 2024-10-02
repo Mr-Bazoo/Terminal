@@ -6,16 +6,16 @@ import AboutCommand from './components/commands/AboutCommand.js';
 import EchoCommand from './components/commands/EchoCommand.js';
 import HelpCommand from './components/commands/HelpCommand.js'
 import CommandHistoryCommand from './components/commands/CommandHistoryCommand.js';
-import ProjectCommand from './components/commands/ProjectCommand.js';
 import SocialsCommand from './components/commands/SocialsCommand.js';
 import WelcomeCommand from './components/commands/WelcomeCommand.js';
 import WhoAmICommand from './components/commands/WhoAmICommand.js';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import UitlegCommand from './components/commands/UitlegCommand.js';
+import SpelCommand from './components/commands/SpelCommand.js';
 
 const commandHistory = [];
 let historyIndex = 0;
-const commands = ["uitleg", "clear", "about", "echo", "exit", "help", "history", "projects", "projects go", "socials", "socials go", "welcome", "whoami"];
+const commands = ["uitleg", "clear", "about", "echo", "exit", "help", "history", "boterkaaseneieren", "socials", "socials go", "welcome", "whoami"];
 
 export default function Home() {
   const commandRef = useRef(null);
@@ -83,8 +83,8 @@ export default function Home() {
         }
         newElement = <CommandHistoryCommand history={commandHistory} command={inputValue}></CommandHistoryCommand>
         break;
-      case 'projects':
-        newElement = <ProjectCommand command={inputValue} args={args}></ProjectCommand>
+      case 'boterkaaseneieren':
+        newElement = <SpelCommand command={inputValue} args={args}></SpelCommand>
         break;
       case 'socials':
         newElement = <SocialsCommand command={inputValue} args={args}></SocialsCommand>
@@ -155,6 +155,7 @@ export default function Home() {
       commandRef.current.focus();
     }
   }, []);
+
 
   useLayoutEffect(() => {
     scrollToBottom();

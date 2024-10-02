@@ -4,9 +4,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TheDanniCraft.de - Offical Website',
-  description: 'Learn more about TheDanniCraft. A passionate developer, creator and community owner. The right place to learn more about TheDanniCraft and his work.',
-  keywords: "website, portfolio, thedannicraft"
+  title: 'Bazootainment',
+  description: 'De man, de mythe, de legende',
+  keywords: "zoektocht"
 }
 
 export default function RootLayout({ children }) {
