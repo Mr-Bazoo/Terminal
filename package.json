@@ -1,16 +1,14 @@
 {
 	"name": "Meneer_Bas_secret_website",
 	"homepage": "https://Mr-Bazoo.github.io/Terminal",
-
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+  		"dev": "next dev",
+  		"build": "next build",
+  		"start": "next start",
+  		"deploy": "gh-pages -d build"
+
 	},
 	"dependencies": {
 		"autoprefixer": "10.4.20",
@@ -20,12 +18,10 @@
 		"postcss": "8.4.47",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
+		"react-scripts": "^5.0.1",
 		"tailwindcss": "3.4.13"
 	},
 	"devDependencies": {
 		"gh-pages": "^6.1.1"
 	}
-
-	
 }
-
