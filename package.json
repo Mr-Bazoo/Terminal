@@ -1,8 +1,11 @@
 {
-	"name": "Meneer Bas secret website",
+	"homepage": "https://Mr-Bazoo.github.io/<repository>",
+	"name": "Meneer_Bas_secret_website",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
@@ -22,11 +25,6 @@
 		"gh-pages": "^6.1.1"
 	}
 
+	
+}
 
-  // ... other scripts
-	"homepage": "https://<username>.github.io/<repository>",
-  	"scripts": {
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
-}
-}
