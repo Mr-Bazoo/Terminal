@@ -8,9 +8,9 @@ const AboutCommand = (props) => {
     return (
         <div>
             <CommandLine command={command}></CommandLine>
-            <p>Get in touch with me here:</p>
-            <LinkEntry color={"#5865F2"} label={"Discord - TheDanniCraft#0202"} link={"https://discordapp.com/users/385090261019131915"}></LinkEntry>
-            <LinkEntry color={"#CBD5FF"} label={"Mail - mail@thedannicraft.de"} link={"mailto:mail@thedannicraft.de"}></LinkEntry>
+            <p>Wat je echt over mij wil weten, en wat je nog niet wist.
+                Ik ben dol op boter, kaas en eieren!
+            </p>
         </div>
     );
 };

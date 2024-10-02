@@ -1,5 +1,4 @@
 import React from 'react';
-import LogoAsciArt from '../LogoAsciArt.js'
 import CommandLine from '../CommandLine.js'
 
 const UitlegCommand = (props) => {
@@ -8,13 +7,12 @@ const UitlegCommand = (props) => {
     return (
         <div>
             <CommandLine command={command}></CommandLine>
-            <LogoAsciArt></LogoAsciArt>
-            <p>Hey 👋,</p>
-            <p>My name is <strong>thedannicraft</strong>!</p>
-            <p>I{"'"}m a hobby developper based in <strong>Germany</strong>.</p>
-            <p>I am passionate in writing codes, developing web applications,</p>
-            <p>games and many more! You can check out my projects</p>
-            <p>by running <strong><span class="secondary">projects</span></strong> inside this shell</p>
+            <p>Hallo 👋,</p>
+            <p>Welkom op mijn website waarbij je het <strong>recht</strong> om mij postzegels te verkopen kan winnen!!</p>
+            <p>Om uiteindelijk te winnen moet je opzoek gaan naar de verborgen hints.</p>
+            <p>Als je uiteindelijk alles hebt gevonden, dan krijg je een <strong>codewoord</strong>.</p>
+            <p>Als je dit codewoord tegen mij verteld en je mapje met kinderpostzegels bij je hebt.</p>
+            <p>Dan mag jij mij kinderpostzegels verkopen!</p>
         </div>
     );
 };
